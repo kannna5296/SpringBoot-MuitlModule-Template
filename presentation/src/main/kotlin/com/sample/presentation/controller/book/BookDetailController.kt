@@ -27,6 +27,7 @@ class BookDetailController(private val service: BookDetailService) {
         bookId: String
     ): ResponseEntity<BookDetailResponse> {
         val result = service.execute(bookId.toInt())
+        //　適当コメント、
         return ResponseEntity.ok(result)
     }
 }
